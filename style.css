@@ -3,18 +3,19 @@
   padding: 0;
   list-style-type: none;
 }
-body{
+body {
   background: rgba(0, 0, 0, 0.465);
 }
 .page-head {
   display: flex;
   justify-content: center;
 }
-.div-cont{
+.div-cont {
   margin-top: 80px;
 }
 .panel {
   width: 550px;
+  padding: 10px;
 }
 .tab {
   display: flex;
@@ -43,4 +44,15 @@ body{
 }
 .appear.show {
   display: block;
+}
+
+@media screen and (max-width: 570px) {
+  .page-cont {
+    width: 400px;
+    /* flex-direction: column; */
+    align-items: center;
+  }
+  .panel{
+    width: 400px;
+  }
 }
